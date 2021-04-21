@@ -1,5 +1,5 @@
 # TakaFlask
-
+![alt text](https://i.imgur.com/eMpdPSu.png)
 # Setup instructions
 ```
 git clone https://github.com/randyfan/TakaFlask
@@ -35,3 +35,4 @@ docker logs -f taka-container
 
 
 Go to http://127.0.0.1:5000/
+
