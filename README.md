@@ -3,6 +3,7 @@
 # Setup instructions
 ```
 git clone https://github.com/randyfan/TakaFlask
+pip install requirements.txt
 ```
 
 # Set up database
