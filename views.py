@@ -15,7 +15,6 @@ with con.cursor() as cur:
     rows = cur.fetchall()  # just a single row containing count
     row_count = len(rows)
 
-
 # DB methods
 # Update curr cum utterances in DB
 @app.route("/save", methods=['POST'])
