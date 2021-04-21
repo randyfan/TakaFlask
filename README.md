@@ -3,10 +3,9 @@
 # Setup instructions
 ```
 git clone https://github.com/randyfan/TakaFlask
-pip install requirements.txt
 ```
 
-# Set up database
+# Initialize MySQL database
 ```
 docker run --name some-mysql-taka -e MYSQL_ROOT_PASSWORD=my-secret-pw --network my-network -e MYSQL_DATABASE=demo -dit mysql:latest --default-authentication-plugin=mysql_native_password
 
@@ -25,9 +24,16 @@ CREATE TABLE takatable(
 
 ```
 
-# CD into Taka Flask directory
+# Open new terminal and CD into Taka Flask directory
 ```
 docker build -t taka .
 docker run -dit --name=taka-container -e FLASK_APP=views.py -p 5000:5000 --network my-network taka
 docker logs -f taka-container
 ```
+
+
+```
+open local host
+```
+
+Go to http://127.0.0.1:5000/

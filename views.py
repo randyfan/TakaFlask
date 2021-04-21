@@ -15,6 +15,7 @@ with con.cursor() as cur:
     rows = cur.fetchall()  # just a single row containing count
     row_count = len(rows)
 
+
 # DB methods
 # Update curr cum utterances in DB
 @app.route("/save", methods=['POST'])
@@ -50,7 +51,7 @@ def Filler():
     curr_cum_utterances = request.args.get('currCumUtterances',
                                            default=None)  # Speech text is cumulative. Contains all the text said so far
     filler_count_dict = get_filler_count_dict(curr_cum_utterances)
-    # What's returned
+
     results = {
         "filler_result": filler_count_dict,
     }
@@ -64,7 +65,7 @@ def Speed():
     time_elapsed = request.args.get('timeElapsed', default=None)  # in seconds, includes decimal
     talking_speed, corresponding_color, corresponding_text = get_talking_speed(curr_utterance,
                                                                                time_elapsed)  # Talking too fast or slow == red color, just right == green
-    # What's returned
+
     results = {
         "speed_result": talking_speed,
         "speed_color": corresponding_color,

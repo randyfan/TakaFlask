@@ -1,6 +1,5 @@
 {% extends 'Base.html' %} <!-- Randy note: technically could move the code here-->
 
-
 {% block css %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,7 +33,6 @@
 
     </style>
 {% endblock %}
-
 
 {% block body %}
 {% block NavigationBar %}
@@ -80,7 +78,6 @@
 	          </p>
 	    </div>
 		<br>
-
 		<div class="container">
 			<div class="ui form">
 				<div class="field">
@@ -97,9 +94,7 @@ transform: translateX(-50%);width:300px;margin-bottom:50px;border-radius:10px;ma
 		</button>
 
 		<!--{# https://stackoverflow.com/questions/37050172/why-django-finds-errors-inside-comment-blocks-in-template<a class="ui primary" href="{% url 'translate' %}">Translate</a>#} -->
-
 	</div>
-
 	<div class="ui six wide column">
 		<div class="container">
 			<h2 style="margin-left:10px;"> Talking Speed (Updates after 5 seconds of talking):</h2>
@@ -113,14 +108,11 @@ transform: translateX(-50%);width:300px;margin-bottom:50px;border-radius:10px;ma
 
 </div>
 
-
 	<!-- <h1>{{ result1 }}</h1> -->
 {% endblock %}
 
 
-
 {% block javascript %}
-
 
 
 <!--https://www.chartjs.org/docs/latest/general/responsive.html-->
@@ -266,11 +258,6 @@ function getTimeSinceLaskCheck() {
 }
 
 
-
-
-
-
-
 // Initialize filler chart so we can update it's values later
 var fillerPieChart;
 var data = {
@@ -308,6 +295,7 @@ Chart.plugins.register({
 		}
 	}
 });
+
 
 var ctx = document.getElementById("filler-pie-chart").getContext('2d');
 fillerPieChart = new Chart(ctx, {
