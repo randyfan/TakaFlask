@@ -1,6 +1,7 @@
 # TakaFlask
 ![alt text](https://i.imgur.com/eMpdPSu.png)
 # Setup instructions
+Install docker dashboard https://docs.docker.com/desktop/dashboard/
 ```
 git clone https://github.com/randyfan/TakaFlask
 ```
