@@ -94,9 +94,9 @@ def get_talking_speed(curr_utterance, time_elapsed):
     # time_elapsed_adjusted = time_elapsed - 0.81     # TODO: Randy thinks the hyperparameter increases slightly depending on the length of the utterance.
     # need -0.81 for ~30 seconds
 
-    print("MOOF ", no_short_words, flush=True)
     # print("Time elapsed" , time_elapsed_adjusted, flush = True)
     # words_per_sec = len(words)/time_elapsed_adjusted
+
     print("Time elapsed", time_elapsed, flush=True)
     words_per_sec = (len(no_short_words) + .75 * len(almost_short_words) + .5 * len(
         short_words)) / time_elapsed  # words like "a" that are too short and take up around half the time to say

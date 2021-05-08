@@ -32,8 +32,6 @@ def update_cum_utterances():
         print("curr row count debug: ", row_count)
         cur.execute("REPLACE INTO takatable (this_id, this_curr_cum_utterances) VALUES (%s, %s)",
                     [row_count + 1, curr_cum_utterances])
-
-        # TODO: dynamically update this_id to reflect session count
     return {}, 777
 
 
